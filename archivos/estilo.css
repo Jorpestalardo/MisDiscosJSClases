@@ -1,0 +1,278 @@
+/**
+ * Versión 1.0.0
+ */
+@charset "utf-8";
+
+/**
+ * Fonts
+ */
+/**
+ * Mobile
+ */
+
+/** General */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/** Body */
+body {
+    font-family: 'Palanquin Dark', sans-serif;
+    background-color: #202020;
+    color: #080608;
+
+}
+
+/** Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #fff;
+
+}
+
+
+/** Encabezados */
+h1{
+    font-family: 'Hind', sans-serif;
+    font-size: 3.6em;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin: 25px 0px 25px 0px;
+}
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 6em;
+    color: #134F5C;
+}
+
+.fa-compact-disc{
+    font-size: 25px;
+}
+
+.fa-headphones{
+    font-size: 25px;
+}
+
+
+
+/** Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4em 2em;
+    background-image: url(../img/fondoheader.png);
+    background-size: cover;
+
+    
+}
+
+main p {
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-align: left;
+    color: #581e1e;
+    padding: 10px;
+}
+
+main p strong, 
+main p em {
+    font-size: 1em;
+}
+
+main p strong {
+    font-weight: 700;
+}
+
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+main ul li {
+    margin-left: 2em;
+    font-size: 2.4em;
+    line-height: 2;
+    text-align: left;
+    color: #1A4A5E;
+}
+
+main ul li strong,
+main ul li em {
+    font-size: 1em;
+}
+
+main ul li strong {
+    font-weight: 700;
+}
+
+main ul li em {
+    font-style: italic;
+}
+
+main button {
+    margin: .5em 0;
+    border: none;
+    border-radius: .5em;
+    padding: .25em .5em;
+    background: #83d3e673;
+    cursor: pointer;
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-align: center;
+    color: #162f33;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+main div.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    width: 100%;
+    padding: 1em;
+    background: rgba(32, 153, 180, 0.5);
+}
+
+
+main div.galeria > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    height: 5em;
+}
+
+
+#infoCodigo{ 
+    background-color: rgba(185, 223, 195, 0.63);
+    padding: 0px;
+    border-radius: 5%;
+    margin: 50px;
+
+}
+
+#info{
+    background-color: rgba(255, 250, 240, 0.63);
+    padding: 0px;
+    border-radius: 5%;
+    margin: 50px;
+}
+
+/** Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+    justify-content: flex-end;
+    
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+footer ul li {
+    font-family: 'Montserrat';
+    font-size: 1.4em;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+}
+
+footer ul li a {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    text-decoration: none;
+    color: #D0E0E3;
+}
+
+footer ul li a:hover {
+    color: #a2c4c9;
+}
+
+/** Overs */
+main button:hover {
+    opacity: .8;
+}
+
+.superior{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(209, 23, 23);
+    padding: 10px;
+    background-color: rgba(189, 150, 150, 0.5);
+    border-radius: 50%;
+}
+
+.inferior{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    background-color: rgba(194, 186, 186, 0.658);
+    border-radius: 50%;
+
+}
+
+.mayorDuracion{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(146, 28, 214);
+    padding: 10px;
+    background-color: rgba(175, 138, 199, 0.658);
+    border-radius: 50%;
+
+}
+
+/**
+ * Web
+ */
+@media screen and (min-width: 960px) {
+
+    /** Main */
+    main div.galeria {
+        flex-direction: row;
+    }
+
+
+    /** Footer */
+    footer ul {
+        flex-direction: row;
+    }
+
+}

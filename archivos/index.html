@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Programación I | Parcial 1 | Pestalardo, Maria Jorgelina</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="../archivos/favicon-32x32.png">
+        <link rel="stylesheet" href="estilo.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://kit.fontawesome.com/3f8ec9fa17.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Hind:wght@300&family=Palanquin+Dark&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="animate__animated animate__pulse animate__slow">Lista de Discos <i class="fas fa-compact-disc"></i> Por: Pestalardo, Maria Jorgelina. <i class="fas fa-headphones"></i>
+            </h1>
+            </header>
+        <main>
+            <h2 class="animate__animated animate__backInLeft">Mis Discos</h2>
+            <p class="animate__animated animate__backInLeft">Ingresa tus discos:</p>
+            <button onclick="Cargar();" class="animate__animated animate__backInLeft">Cargar nuevo disco</button>
+            <p class="animate__animated animate__backInLeft">Para ver todos tus discos:</p>
+            <button onclick="Mostrar();" class="animate__animated animate__backInLeft">Mostrar discos</button>
+            <p class="animate__animated animate__backInLeft">¿Deseas eliminar el último Disco?</p>
+            <button onclick="EliminarDisco();" class="animate__animated animate__backInLeft">Borrar último disco</button>
+            <p class="animate__animated animate__backInLeft">Buscá tus discos por:</p>
+            <button onclick="BuscarDiscoCodigo();" class="animate__animated animate__backInLeft">Mostrar discos por codigo</button>
+            <div  id="info"></div>
+            <div  id="infoCodigo"></div>
+        </main>
+        <footer>
+            <ul>
+                <li>Clases JS</li>
+                <li>
+                    <a href="http://www.linkedin.com/in/jorgelina-pestalardo-abb969151" target="_blank">Mi Linkedin</a>
+                </li>
+                <li>Programación 1/ Escuela Da Vinci</li>
+            </ul>
+            <script src="../classes/pista.class.js"></script>
+            <script src="../classes/disco.class.js"></script>
+            <script src="../classes/parcial.js"></script>
+        </footer>
+    </body>
+</html>
